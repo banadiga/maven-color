@@ -25,7 +25,8 @@ mkdir -p ${HOME}/.aliases
 * Download last version
 
 ```bash
-wget https://raw.github.com/banadiga/maven-color/master/maven-color.sh  --output-document=${HOME}/.aliases/maven-color.sh
+wget https://raw.github.com/banadiga/maven-color/master/maven-color.sh \
+ --output-document=${HOME}/.aliases/maven-color.sh
 ```
 
 * Add to RC file
