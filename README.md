@@ -17,9 +17,9 @@ To install
 
 ```bash
 mkdir -p ${HOME}/.aliases # make a place for the script to live 
-wget https://github.com/banadiga/maven-color/blob/master/maven-color.sh ${HOME}/.aliases # download last version
-echo "[[ -s \"${HOME}/.aliases/maven-color.sh\" ]] && source \"${HOME}/.aliases/maven-color.sh\"" >> ${HOME}/bashrc # add to RC file
-. ${HOME}/bashrc # to re-read your bash configuration
+wget https://raw.github.com/banadiga/maven-color/master/maven-color.sh  --output-document=${HOME}/.aliases/maven-color.sh # download last version
+echo "[[ -s \"${HOME}/.aliases/maven-color.sh\" ]] && source \"${HOME}/.aliases/maven-color.sh\"" >> ${HOME}/.bashrc # add to RC file
+. ${HOME}/.bashrc # to re-read your bash configuration
 ```
 
 
@@ -30,8 +30,8 @@ To update
 * **Or** run the folowing bash scripts to do automaticly
 
 ```bash
-wget https://github.com/banadiga/maven-color/blob/master/maven-color.sh ${HOME}/.aliases # download last version
-. ${HOME}/bashrc # to re-read your bash configuration
+wget https://raw.github.com/banadiga/maven-color/master/maven-color.sh  --output-document=${HOME}/.aliases/maven-color.sh # download last version
+. ${HOME}/.bashrc # to re-read your bash configuration
 ```
 
 
