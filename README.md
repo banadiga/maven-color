@@ -26,13 +26,14 @@ mkdir -p ${HOME}/.aliases
 
 ```bash
 wget https://raw.github.com/banadiga/maven-color/master/maven-color.sh \
- --output-document=${HOME}/.aliases/maven-color.sh
+  --output-document=${HOME}/.aliases/maven-color.sh
 ```
 
 * Add to RC file
 
 ```bash
-echo "[[ -s \"${HOME}/.aliases/maven-color.sh\" ]] && source \"${HOME}/.aliases/maven-color.sh\"" >> ${HOME}/.bashrc # 
+echo "[[ -s \"${HOME}/.aliases/maven-color.sh\" ]] && source \"${HOME}/.aliases/maven-color.sh\"" \
+  >> ${HOME}/.bashrc
 ```
 
 * Ro re-read your bash configuration
@@ -52,10 +53,13 @@ Download new version with raplase old file **and** re-read your bash configurati
 * Download last version
 
 ```bash
-wget https://raw.github.com/banadiga/maven-color/master/maven-color.sh  --output-document=${HOME}/.aliases/maven-color.sh
+wget https://raw.github.com/banadiga/maven-color/master/maven-color.sh \
+  --output-document=${HOME}/.aliases/maven-color.sh
 ```
+
 * To re-read your bash configuration
 
 ```bash
-. ${HOME}/.bashrc # 
+. ${HOME}/.bashrc
 ```
+
