@@ -7,7 +7,7 @@ Also added few aliases for short call.
 * **mvnc** - for run "mvn" with color highlighting
 * **mci** - for run "mvn clean install" with color highlighting
 
-**Node:** any extra params for **mvnc** will proxy as params for **mvn**
+**Note:** any extra params for **mvnc** will proxy as params for **mvn**
 
 To install
 ------------------------
