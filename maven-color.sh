@@ -26,5 +26,5 @@ color_maven() {
 }
 
 # Short alias
-alias mvnc=color_maven # For run eny maven comand with color highlighting
-alias mci="mvnc clean install" # Fir run mvn clean install with color highlighting
+alias mvnc=color_maven # To run eny maven comand with color highlighting
+alias mci="mvnc clean install" # To run mvn clean install with color highlighting
