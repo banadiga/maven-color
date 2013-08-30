@@ -3,18 +3,20 @@ Output color highlighting for Maven
 
 It works by wrapping your Maven command and then inserting ANSI colour codes in the output.
 
-Also added few aliases for short call.
-* **mvnc** - for run "mvn" with color highlighting
-* **mci** - for run "mvn clean install" with color highlighting
+The script is intended to be run on CLI shell startup. 
 
-**Note:** any extra params for **mvnc** will proxy as params for **mvn**
+In addition to the coloring function, it creates the following aliases:
+* **mvnc** - to run "mvn" with color highlighting
+* **mci** - to run "mvn clean install" with color highlighting
+
+**Note:** any extra params for **mvnc** will be proxied to **mvn**
 
 To install
 ------------------------
 
 Put the file in a handy directory (like *~/.aliases*) **add** a link to it in your *.bashrc* (or other shell's initialization file)
 
-**Or** run the folowing bash command one by one to do automaticly
+The following set of commands will do the job:
 
 * Make a place for the script to live 
 
@@ -36,7 +38,7 @@ echo "[[ -s \"${HOME}/.aliases/maven-color.sh\" ]] && source \"${HOME}/.aliases/
   >> ${HOME}/.bashrc
 ```
 
-* Ro re-read your bash configuration
+* Re-read your bash configuration
 
 ```bash
 . ${HOME}/.bashrc
@@ -46,9 +48,9 @@ echo "[[ -s \"${HOME}/.aliases/maven-color.sh\" ]] && source \"${HOME}/.aliases/
 To update
 ------------------------
 
-Download new version with raplase old file **and** re-read your bash configuration
+Download new version replacing old file **and** re-read your bash configuration:
 
-**Or** run the folowing bash command one by one to do automaticly
+The following set of commands will do the job:
 
 * Download last version
 
