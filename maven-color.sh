@@ -20,11 +20,13 @@ color_maven() {
                  -e "s/\(FAILURE.*\)/${BRED}\1${NORMAL}/g" \
                  -e "s/\(\[WARNING\].*\)/${YELLOW}\1${NORMAL}/g"\
                  -e "s/\(\[INFO\].*\)/${GREEN}\1${NORMAL}/g" \
+                 -e "s/\(\[DEBUG\].*\)/${GREEN}\1${NORMAL}/g" \
                  -e "s/\(\[INFO\].*SUCCESS.*\)/${BGREEN}\1${NORMAL}/g" \
                  -e "s/\(\[INFO\].*FAILURE.*\)/${BRED}\1${NORMAL}/g" \
                  -e "s/\(\[INFO\].*SKIPPED.*\)/${BYELLOW}\1${NORMAL}/g"
 }
 
 # Short alias
-alias mvnc=color_maven # To run eny maven comand with color highlighting
-alias mci="mvnc clean install" # To run mvn clean install with color highlighting
+alias mvnc=color_maven # To run eny 'maven' comand with color highlighting
+alias mci="mvnc clean install" # To run 'mvn clean install' with color highlighting
+alias mcist="mci -Dmaven.test.skip=true -Dmaven.it.skip=true" # For run 'mvn clean install -Dmaven.test.skip=true -Dmaven.it.skip=true' with color highlighting
