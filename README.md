@@ -66,3 +66,12 @@ wget https://raw.github.com/banadiga/maven-color/master/maven-color.sh \
 . ${HOME}/.bashrc
 ```
 
+
+To install (Windows)
+------------------------
+
+
+
+To update (Windows)
+------------------------
+
