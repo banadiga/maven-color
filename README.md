@@ -12,7 +12,7 @@ In addition to the coloring function, it creates the following aliases:
 
 **Note:** any extra params for **mvnc** will be proxied to **mvn**
 
-To install
+To install (Ubuntu/Mac)
 ------------------------
 
 Put the file in a handy directory (like *~/.aliases*) **add** a link to it in your *.bashrc* (or other shell's initialization file)
@@ -46,7 +46,7 @@ echo "[[ -s \"${HOME}/.aliases/maven-color.sh\" ]] && source \"${HOME}/.aliases/
 ```
 
 
-To update
+To update (Ubuntu/Mac)
 ------------------------
 
 Download new version replacing old file **and** re-read your bash configuration:
