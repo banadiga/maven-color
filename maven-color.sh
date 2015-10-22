@@ -30,3 +30,5 @@ color_maven() {
 alias mvnc=color_maven # To run eny 'maven' comand with color highlighting
 alias mci="mvnc clean install" # To run 'mvn clean install' with color highlighting
 alias mcist="mci -Dmaven.test.skip=true -Dmaven.it.skip=true" # For run 'mvn clean install -Dmaven.test.skip=true -Dmaven.it.skip=true' with color highlighting
+
+complete -o default -o nospace -F _mvn mvnc # To add command autocomplete

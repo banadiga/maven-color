@@ -7,6 +7,7 @@ The script is intended to be run on CLI shell startup.
 
 In addition to the coloring function, it creates the following aliases:
 * **mvnc** - to run "mvn" with color highlighting
+* **mvnc** [TAB] - to run auto complete
 * **mci** - to run "mvn clean install" with color highlighting
 * **mcist** - to run "mci -Dmaven.test.skip=true -Dmaven.it.skip=true" with color highlighting
 
